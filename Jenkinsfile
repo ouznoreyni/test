@@ -13,7 +13,11 @@ pipeline {
              echo "END INSTALL CAPROVER CLI"
           }
         }
-
+       stage('Run test') {
+          steps {
+             echo "run test"
+          }
+        }
         stage('Deployment') {
             steps {
                 echo 'Start deploy'
