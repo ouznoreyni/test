@@ -9,8 +9,9 @@ pipeline {
         stage('Install caprover CLI') {
           steps {
              echo "START INSTALL CAPROVER CLI"
-             sh 'npm install -g caprover'
+             sh 'npm install -g caprover jest'
              echo "END INSTALL CAPROVER CLI"
+             
           }
         }
        stage('Run test') {
